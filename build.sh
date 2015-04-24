@@ -1,4 +1,4 @@
 #!/bin/sh
-LATEST=1.0.3.1
-docker build -t grigio/meteor:$LATEST .
-docker push grigio/meteor:$LATEST
+LATEST=1.1.0.2
+docker build -t gissehel/meteor:$LATEST .
+docker push gissehel/meteor:$LATEST

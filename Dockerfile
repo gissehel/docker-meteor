@@ -1,10 +1,10 @@
 FROM debian:jessie
-MAINTAINER Luigi Maselli http://grigio.org
+MAINTAINER Gissehel
 
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get -qq update && apt-get install -qq -y curl procps
 
-ENV METEOR_RELEASE 1.0.3.1
+ENV METEOR_RELEASE 1.1.0.2
 
 # Install a specific Meteor release
 RUN curl  https://install.meteor.com/ 2>/dev/null | sed 's/^RELEASE/#RELEASE/'| RELEASE=$METEOR_RELEASE sh
